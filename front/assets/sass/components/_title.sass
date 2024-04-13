@@ -1,0 +1,23 @@
+.title
+    color: #000
+    font-size: 32px
+    font-weight: 700
+    &_with-bg
+        position: relative
+        z-index: 1
+        span
+            color: #000
+            font-size: 80px
+            font-family: "Whisper", sans-serif
+            font-weight: 400
+        &::before
+            position: absolute
+            content: "A"
+            color: white
+            font-size: 300px
+            font-family: "Whisper", sans-serif
+            font-weight: 400
+            left: 0
+            top: 50%
+            transform: translate(0, -50%)
+            z-index: -1

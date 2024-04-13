@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <base href="/" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/index.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__icon"></div>
+      </div>
+      <header class="header">
+        <div class="container header__container header__container_center">
+          <a class="header__logo" href="/">
+            <span>A</span>
+            rticle.me
+          </a>
+        </div>
+      </header>
+      <main>
+        <section class="articles">
+          <div class="container articles__container">
+            <h1 class="title title_with-bg articles__title">Administration</h1>
+            <a
+              class="btn btn_bg-black articles__btn"
+              href="/admin/create_article/"
+              >New article</a
+            >
+            <div class="articles__grid articles__grid_mt-24"></div>
+            <div class="pagination"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/notification.js"></script>
+    <script src="/assets/js/articles.js"></script>
+    <script src="/assets/js/admin-article.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

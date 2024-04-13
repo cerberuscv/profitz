@@ -1,0 +1,50 @@
+@media (max-width: 650px)
+    .notification
+        &-wrapper
+            top: 80px
+            right: 20px
+
+    .title
+        span
+            font-size: 50px
+        &_with-bg
+            &::before
+                font-size: 250px
+
+    .articles, .action, .sign
+        &__title
+            width: 350px
+            font-size: 32px
+
+    .sign
+        &__form
+            width: 100%
+
+@media (max-width: 475px)
+    .title
+        font-size: 24px
+        span
+            font-size: 45px
+        &_with-bg
+            &::before
+                font-size: 200px
+
+    .articles, .action, .sign
+        &__title
+            width: 280px
+            font-size: 24px
+
+@media (max-width: 350px)
+    .btn
+        padding: 8px 12px
+
+    .header
+        &__logo
+            font-size: 16px
+        &__btn
+            &:first-child
+                margin-right: 8px
+
+    .comments
+        &__input
+            padding: 12px 100px 12px 10px

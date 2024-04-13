@@ -1,0 +1,62 @@
+@import vendors/all
+
+h1, h2, h3, h4, h5, h6, p, ul, label
+    margin: 0
+    padding: 0
+
+ul
+    list-style-type: none
+
+a
+    text-decoration: none
+    &:hover
+        text-decoration: none
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+img
+    pointer-events: none
+
+html
+    height: 100%
+
+body
+    position: relative
+    font-family: 'Manrope', sans-serif
+    height: 100%
+    font-weight: 400
+    overflow: hidden
+    background: #F4F7F8
+
+*
+    line-height: 100%
+    scrollbar-color: #000
+    &::-webkit-scrollbar
+        height: 4px
+        width: 4px
+    &::-webkit-scrollbar-track
+        background-color: none
+    &::-webkit-scrollbar-thumb
+        background-color: #000
+
+.wrapper
+    position: relative
+    min-height: 100vh
+    overflow-x: hidden
+
+.container
+    width: 100%
+    max-width: 1160px
+    padding: 0 20px
+    margin: 0 auto
+
+.disabled
+    cursor: not-allowed
+    opacity: 0.5
+    pointer-events: none
+
+@import components/all
+@import layouts/all

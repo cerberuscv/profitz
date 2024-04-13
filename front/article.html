@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles — Lorem ipsum dolor sit amet consectetur.</title>
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/article.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__icon"></div>
+      </div>
+      <header class="header">
+        <div class="container header__container">
+          <a class="header__logo" href="/">
+            <span>A</span>
+            rticle.me
+          </a>
+          <a class="header__profile" href="/logout/">
+            <div class="header__username"></div>
+            <img src="/assets/img/icons/logout.svg" alt="logout" />
+          </a>
+          <div class="header__btns">
+            <a class="btn btn_bg-black header__btn" href="/login/">Log in</a>
+            <a class="btn btn_bg-white header__btn" href="/sign-up/">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="article">
+          <div class="container article__container">
+            <img class="article__img" src="" alt="article-img" />
+            <div class="article__wrapper">
+              <h1 class="title article__title"></h1>
+              <div class="comment">
+                <img src="/assets/img/icons/comment.svg" alt="comment" />
+                <span></span>
+              </div>
+            </div>
+            <p class="article__text"></p>
+          </div>
+        </section>
+        <section class="comments">
+          <div class="container comments__container">
+            <h3 class="title comments__title">Comments</h3>
+            <div class="comments__auth">
+              <h4 class="title comments__auth-title">
+                You need to have an account to leave comments
+              </h4>
+              <div class="comments__auth-btns">
+                <a class="btn btn_bg-white comments__auth-btn" href="/login/"
+                  >Log in</a
+                >
+                <a class="btn btn_bg-black comments__auth-btn" href="/sign-up/"
+                  >Sign up</a
+                >
+              </div>
+            </div>
+            <form class="comments__form" action="#">
+              <div class="comments__input-wrapper">
+                <input
+                  class="input comments__input"
+                  type="text"
+                  placeholder="Lorem ipsum dolor sit amet consectetur. Lorem amet feugiat nisi in amet dignissim."
+                />
+                <a class="btn btn_bg-black comments__input-btn" href="#">
+                  Post
+                  <svg
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.292893 0.792893C-0.097631 1.18342 -0.097631 1.81658 0.292893 2.20711L3.08579 5L0.292893 7.79289C-0.097631 8.18342 -0.097631 8.81658 0.292893 9.20711C0.683417 9.59763 1.31658 9.59763 1.70711 9.20711L5.20711 5.70711C5.59763 5.31658 5.59763 4.68342 5.20711 4.29289L1.70711 0.792893C1.31658 0.402369 0.683417 0.402369 0.292893 0.792893Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </form>
+            <div class="comments__elems"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/notification.js"></script>
+    <script src="/assets/js/article.js"></script>
+    <script src="/assets/js/comments.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

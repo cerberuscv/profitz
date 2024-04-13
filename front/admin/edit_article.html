@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <base href="/" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles — action article</title>
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/action.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="preloader">
+        <div class="preloader__icon"></div>
+      </div>
+      <header class="header">
+        <div class="container header__container header__container_center">
+          <a class="header__logo" href="/">
+            <span>A</span>
+            rticle.me
+          </a>
+        </div>
+      </header>
+      <main>
+        <section class="action">
+          <div class="container action__container">
+            <h1 class="title title_with-bg action__title">Edit article</h1>
+            <form class="action__form" id="edit-article-form" action="#">
+              <label class="label" for="title">Title</label>
+              <input
+                class="input"
+                id="title"
+                type="text"
+                placeholder="Lorem ipsum dolor sit amet consectetur."
+                name="header"
+                required
+              />
+              <label class="label" for="text">Text</label>
+              <textarea
+                class="input"
+                id="text"
+                placeholder="Lorem ipsum dolor sit amet consectetur. Lorem amet feugiat nisi in amet dignissim. Curabitur sed eu ultrices felis arcu lorem ultricies turpis phasellus. Faucibus tortor sed mattis leo turpis cursus tortor elit pellentesque. Tellus molestie at lectus eget. Vel ut erat nunc quam duis at. Faucibus eu leo sed sociis velit. Porttitor sit non id amet tempus curabitur vitae orci et. Nibh est in varius est vitae morbi. Posuere elementum condimentum sociis quis a sit sed. Praesent condimentum sit ut quis facilisis orci nisi est tincidunt. Aliquam a mi integer felis donec enim vitae in arcu."
+                name="text"
+                required
+                rows="10"
+              ></textarea>
+              <label class="label" for="image">Image</label>
+              <input
+                class="input"
+                id="image"
+                type="text"
+                placeholder="imgur.com/index.png"
+                name="files"
+                required
+              />
+              <button class="btn btn_bg-black action__btn" type="submit">
+                Save
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/js/libs/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/notification.js"></script>
+    <script src="/assets/js/admin-article.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
